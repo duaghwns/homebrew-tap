@@ -2,7 +2,7 @@ class ClaudeUsageBar < Formula
   desc "macOS menu bar app for real-time Claude API usage monitoring"
   homepage "https://github.com/duaghwns/ClaudeUsageBar"
   url "https://github.com/duaghwns/ClaudeUsageBar/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "ca5aa8a170f8b07a5cbd9b5f8e2a75be6853e33ee697c81c4664bceb573349ea"
+  sha256 "0f5c776ea61c7135de912cfd68908a5c7c449f975d0a5a494ee91d5a28da16e1"
   license "MIT"
 
   depends_on xcode: ["15.0", :build]
