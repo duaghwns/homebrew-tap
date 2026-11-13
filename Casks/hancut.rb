@@ -1,6 +1,6 @@
 cask "hancut" do
-  version "0.1.7"
-  sha256 "4f45c16f5bff6bf912c58623d5bcfbbc2cb963af2854c572d65b4291f9f3e6ce"
+  version "0.1.8"
+  sha256 "45882b44b5128d48ab4e1a098cd6174cb20df7cbecfefb6c611467165592102e"
 
   url "https://github.com/duaghwns/hancut-releases/releases/download/v#{version}/Hancut-macos-arm64.zip"
   name "Hancut"
