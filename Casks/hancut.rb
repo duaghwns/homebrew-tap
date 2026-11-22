@@ -9,15 +9,14 @@ cask "hancut" do
   homepage "https://github.com/duaghwns/hancut-releases"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :monterey"
   depends_on formula: "exiftool"
+  depends_on macos: :monterey
 
   app "Hancut.app"
 
   # Apple 공증(notarization)을 받지 않은 앱이라, 설치 후 격리 속성을 지워 바로 열리게 한다
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Hancut.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Hancut.app"]
   end
 
   zap trash: [
